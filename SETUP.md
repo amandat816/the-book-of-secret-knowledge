@@ -9,6 +9,18 @@ This guide will help you set up your development environment to contribute to Th
 - Bash shell (for running scripts)
 - curl (for link checking)
 
+## Repository Structure
+
+This repository includes several files to help maintain code quality and consistency:
+
+- **README.md** - Main documentation with curated knowledge resources
+- **SETUP.md** - This file, containing setup instructions
+- **.editorconfig** - Editor configuration for consistent coding styles
+- **.gitattributes** - Git attributes for proper line ending handling
+- **check-links.sh** - Automated script for checking broken links
+- **.github/CONTRIBUTING.md** - Contribution guidelines
+- **.github/CODE_OF_CONDUCT.md** - Community code of conduct
+
 ## Getting Started
 
 ### 1. Fork and Clone the Repository
@@ -94,7 +106,14 @@ npx markdownlint-cli README.md
 
 #### Check Links
 
-Use the link checker script to verify all links work:
+Use the provided link checker script to verify all links work:
+
+```bash
+# Using the provided script (recommended)
+./check-links.sh
+```
+
+Or manually check links:
 
 ```bash
 # Basic link check
@@ -104,6 +123,16 @@ for i in $(sed -n 's/.*href="\([^"]*\).*/\1/p' README.md | grep -v "^#") ; do
     echo " -> $i - $_rcode"
   fi
 done
+```
+
+You can customize the link checker behavior with environment variables:
+
+```bash
+# Set delay between requests (default: 1 second)
+LINK_CHECK_DELAY=2 ./check-links.sh
+
+# Set request timeout (default: 10 seconds)
+LINK_CHECK_TIMEOUT=15 ./check-links.sh
 ```
 
 **Note:** Some links may return non-200 codes due to rate limiting or temporary issues. Links marked with **\*** in the README are known to be temporarily unavailable.
