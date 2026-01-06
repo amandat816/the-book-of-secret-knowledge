@@ -31,6 +31,17 @@ This repository is a collection of various materials and tools that I use every 
 
 For everyone, really. Here everyone can find their favourite tastes. But to be perfectly honest, it is aimed towards System and Network administrators, DevOps, Pentesters, and Security Researchers.
 
+## :rocket: &nbsp;Getting Started
+
+Want to contribute? Check out the **[Setup Guide](SETUP.md)** for detailed instructions or the **[Quick Reference](QUICK_REFERENCE.md)** for common commands.
+
+Quick start:
+1. Fork this repository
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/the-book-of-secret-knowledge.git`
+3. Set up commit signing (see [SETUP.md](SETUP.md))
+4. Make your changes
+5. Submit a pull request
+
 ## :information_source: &nbsp;Contributing
 
 If you find something which doesn't make sense, or something doesn't seem right, please make a pull request and please add valid and well-reasoned explanations about your changes or comments.
@@ -48,7 +59,7 @@ These below rules may be better:
 
 Url marked **\*** is temporary unavailable. Please don't delete it without confirming that it has permanently expired.
 
-Before adding a pull request, please see the **[contributing guidelines](.github/CONTRIBUTING.md)**. You should also remember about this:
+Before adding a pull request, please see the **[contributing guidelines](.github/CONTRIBUTING.md)** and the **[setup guide](SETUP.md)** for development environment setup. You should also remember about this:
 
 ```diff
 + This repository is not meant to contain everything but only good quality stuff.
