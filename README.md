@@ -33,7 +33,7 @@ For everyone, really. Here everyone can find their favourite tastes. But to be p
 
 ## :rocket: &nbsp;Getting Started
 
-Want to contribute? Check out the **[Setup Guide](SETUP.md)** for detailed instructions on setting up your development environment and contribution workflow.
+Want to contribute? Check out the **[Setup Guide](SETUP.md)** for detailed instructions or the **[Quick Reference](QUICK_REFERENCE.md)** for common commands.
 
 Quick start:
 1. Fork this repository

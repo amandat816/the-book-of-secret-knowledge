@@ -2,6 +2,8 @@
 
 This guide will help you set up your development environment to contribute to The Book of Secret Knowledge.
 
+> **Quick Start**: If you're already familiar with Git workflows, check out the [Quick Reference Guide](QUICK_REFERENCE.md) for common commands and workflows.
+
 ## Prerequisites
 
 - Git
@@ -14,7 +16,8 @@ This guide will help you set up your development environment to contribute to Th
 This repository includes several files to help maintain code quality and consistency:
 
 - **README.md** - Main documentation with curated knowledge resources
-- **SETUP.md** - This file, containing setup instructions
+- **SETUP.md** - This file, containing detailed setup instructions
+- **QUICK_REFERENCE.md** - Quick reference for common Git commands and workflows
 - **.editorconfig** - Editor configuration for consistent coding styles
 - **.gitattributes** - Git attributes for proper line ending handling
 - **check-links.sh** - Automated script for checking broken links
